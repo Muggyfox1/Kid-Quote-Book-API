@@ -10,6 +10,10 @@ namespace Kids_Quote_Book_API.Helpers {
             DataDirectory = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData), "Kids Quote Book API");
         }
 
+        public Local_BookDataHandler(string dataDirectory) {
+            DataDirectory = dataDirectory;
+        }
+
         public string SaveBook(API_BookDataModel BookDataModel, string? token) {
             string dataToSave = JsonConvert.SerializeObject(BookDataModel);
             string fileName = token ?? NewFileName();

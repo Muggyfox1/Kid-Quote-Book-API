@@ -11,6 +11,11 @@ namespace Kids_Quote_Book_API.Helpers {
             logFilePath = Path.Combine(DataDirectory, "log.csv");
         }
 
+        public Local_Logger(string dataDirectory) {
+            DataDirectory = dataDirectory;
+            logFilePath = Path.Combine(DataDirectory, "log.csv");
+        }
+
         public IDisposable? BeginScope<TState>(TState state) where TState : notnull => default!;
 
         public bool IsEnabled(LogLevel logLevel) => true;
