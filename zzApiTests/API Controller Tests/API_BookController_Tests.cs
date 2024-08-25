@@ -3,8 +3,8 @@ using Kids_Quote_Book_API.Models;
 using Microsoft.AspNetCore.Mvc;
 
 namespace zzApiTests {
-    public class API_BookControllerTests {
-        public API_BookControllerTests() {
+    public class API_BookController_Tests {
+        public API_BookController_Tests() {
             //var dataLimit = 1024 * 1024; //1MB
             mockDataHandler = new MockBookDataHandler();
             mockLogger = new MockLogger();

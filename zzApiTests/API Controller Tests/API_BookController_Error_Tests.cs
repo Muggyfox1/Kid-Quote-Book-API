@@ -4,7 +4,7 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Configuration;
 
 namespace zzApiTests.API_Controller_Tests {
-    public class API_BookController_ErrorTests {
+    public class API_BookController_Error_Tests {
         long dataLimit = 1024 * 1024; //1mb
         MockBookDataHandler mockDataHandler;
         MockLogger mockLogger;
@@ -12,7 +12,7 @@ namespace zzApiTests.API_Controller_Tests {
 
         const string data = "this is some data to save that should remain the same.";
 
-        public API_BookController_ErrorTests() {
+        public API_BookController_Error_Tests() {
             mockDataHandler = new MockBookDataHandler();
             mockLogger = new MockLogger();
             _controller = new(mockLogger, mockDataHandler, null);
