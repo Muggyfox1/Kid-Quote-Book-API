@@ -9,11 +9,11 @@ This is an API developed with ASP.net for the mobile app "Kid Quote Book." It pr
 # Installation and Set up 🛠️
 1. Download and extract the release files.
 2. In appsettings.json
-  a. on line 8, change the IP to your hosting PC local IP
-3. Port forward the local IP in your routers settings
-4. run Kids Quote Book API.exe
-5. navigate to *your host PC IP*/kqb to confirm it's running.
-  a. it should load a page that says "hello world!"
+- on line 8, change the IP to your hosting PC local IP
+5. Port forward the local IP in your routers settings
+6. run Kids Quote Book API.exe
+7. navigate to *your host PC IP*/kqb to confirm it's running.
+- it should load a page that says "hello world!"
 
 # Configuration ⚙️
 You can configure some settings in appsettings.json.
@@ -25,10 +25,10 @@ MaxFileMB: determines the max size quote book data files can be. The default is 
 1. Go to the books page
 2. For the book you want to upload, press edit
 3. Fill in the require info for uploading
-  a. Email: this can be anything, this is meant for if anyone hosts this API for public use.
-  b. Server Url: this is the IP address the API is hosted on. Should end in /kqb.
-  c. Token: when uploading a book, leave this blank. It will update after uploading.
-  d. Password: used to encrypt the data locally before sending. And is securely sent over to verify your ability access the book.
+- Email: this can be anything, this is meant for if anyone hosts this API for public use.
+- Server Url: this is the IP address the API is hosted on. Should end in /kqb.
+- Token: when uploading a book, leave this blank. It will update after uploading.
+- Password: used to encrypt the data locally before sending. And is securely sent over to verify your ability access the book.
 4. Press Save
 5. On the book page you should see the upload book button
 6. Press the upload book button
@@ -37,17 +37,17 @@ MaxFileMB: determines the max size quote book data files can be. The default is 
 - If you are an editor for the book, you can do this
 1. Press "Check for Update"
 2. If "Download Updated Book" appears, press it
-  a.  it will update that book, adding new data to what you have.
+-  it will update that book, adding new data to what you have.
 3. Press "Upload Updated Book"
-  a. now all the data you have in that book locally is uploaded.
+- now all the data you have in that book locally is uploaded.
 
 ### To Share
 #### On your phone:
 1. Go to the books page
 2. Press "Export Book to file"
 3. In the dialog
-  a. Press the book name to choose what book to export
-  b. if you want to let the person you're sharing this with to also upload new quotes, check the "Allow online editing" checkbox.
+- Press the book name to choose what book to export
+- if you want to let the person you're sharing this with to also upload new quotes, check the "Allow online editing" checkbox.
 4. Press Export
 5. A confirmatino dialog appears, letting you know it's been exported.
 6. Find the exported file in your phones documents (internal storage/documents/*BookName *Date.json)
@@ -63,8 +63,7 @@ MaxFileMB: determines the max size quote book data files can be. The default is 
 
 #### To update from the other persons phone:
 1. Press "Check for Update"
-  a. If an update is available you will then have the option to download the update.
-     Otherwise the button will disappear.
+- If an update is available you will then have the option to download the update. Otherwise the button will disappear.
 2. Press "Download Updated Book"
 
 # Data Directory 📂
